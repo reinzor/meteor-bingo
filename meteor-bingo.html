@@ -1,0 +1,38 @@
+<head>
+  <title>meteor-bingo</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+    {{#if admin_view}}
+        <ul>
+            {{#each numbers}}<li>{{number}}</li>{{/each}}
+        </ul>
+        {{> admin}}
+    {{else}}
+    <div id="background">
+        <center>
+            <div id="main">
+                <h1>{{numbers.[0].number}}</h1>
+                <ul>
+                    {{#each numbers}}<li>{{number}}</li>{{/each}}
+                </ul>
+            </div>
+        </center>
+    </div>
+    {{/if}}
+</template>
+
+<template name="admin">
+    <div id="admin">
+        <button id="remove">Remove all</button>
+        <button id="undo">Undo</button>
+        <br />
+        <form class="new-number">
+            <input type="text" name="text" placeholder="Add new number here" />
+        </form>
+    </div>
+</template>

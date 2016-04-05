@@ -1,0 +1,41 @@
+/* CSS declarations go here */
+
+html, body {height: 100%;}
+
+#background {
+    background-image: url('http://i.imgur.com/7k2Bewo.png?1');
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    color: white;
+    text-align: center;
+    float: left;
+    width: 100%;
+    top: 250px;
+    position: absolute;
+}
+
+h1 {
+    font-size: 300px;
+}
+
+ul {
+    font-size: 100px;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+}
